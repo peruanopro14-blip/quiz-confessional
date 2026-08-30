@@ -183,8 +183,13 @@ export function Wizard() {
       special_phrase: data.specialPhrase,
       whatsapp: data.whatsapp,
     });
-    if (error) console.error("Erro ao salvar respostas:", error.message);
-    setSubmitted(true);
+    if (error) {
+      console.error("Erro ao salvar respostas:", error.message);
+      setSubmitted(true);
+      return;
+    }
+    window.location.href =
+      "https://checkoutseguro.info/checkout/cmtf59ns10cp101o7ktfz9c61?offer=IH60834";
   };
 
   if (submitted) {
