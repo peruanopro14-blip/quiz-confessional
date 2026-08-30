@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { Logo } from "@/components/Logo";
-import { Button } from "@/components/ui/button";
 
 const mainLinks = [
   { label: "Minhas Músicas", to: "/minhas-musicas" as const },
