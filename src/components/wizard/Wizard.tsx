@@ -524,7 +524,7 @@ export function Wizard() {
 
             <div className="mt-6 rounded-3xl bg-gradient-brand p-[2px] shadow-glow">
               <div className="rounded-3xl bg-card p-6 text-center">
-                <p className="font-display text-4xl font-extrabold">R$ 37,90</p>
+                <p className="font-display text-4xl font-extrabold">R$ 29,90</p>
                 <p className="mt-1 text-sm text-muted-foreground">pagamento único</p>
               </div>
             </div>

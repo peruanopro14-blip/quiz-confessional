@@ -9,7 +9,7 @@ import { Pricing, Faq, FinalCta, Reviews } from "@/components/landing/Pricing";
 
 const title = "AmorCantado | Música personalizada para quem você ama";
 const description =
-  "Transforme a sua história de amor em uma música personalizada com letra, voz e produção profissional. Pronta em minutos por R$ 37,90.";
+  "Transforme a sua história de amor em uma música personalizada com letra, voz e produção profissional. Pronta em minutos por R$ 29,90.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

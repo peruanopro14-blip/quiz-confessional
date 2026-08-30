@@ -32,7 +32,7 @@ function Termos() {
             responsabilidade garantir que os conteúdos enviados não violem direitos de terceiros.
           </p>
           <p>
-            O valor de R$ 37,90 é um pagamento único por música, sem assinatura. A entrega ocorre
+            O valor de R$ 29,90 é um pagamento único por música, sem assinatura. A entrega ocorre
             normalmente em minutos após a confirmação do pagamento.
           </p>
           <p>
