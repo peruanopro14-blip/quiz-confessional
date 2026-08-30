@@ -70,7 +70,7 @@ export function SiteFooter() {
 export function WhatsAppFab() {
   return (
     <a
-      href="https://wa.me/5513991000000"
+      href="https://wa.me/4797273194"
       target="_blank"
       rel="noreferrer"
       aria-label="Falar com o suporte no WhatsApp"
