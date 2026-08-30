@@ -3,7 +3,7 @@ import { useSession } from "@tanstack/react-start/server";
 import type { AdminSession } from "./admin.server";
 
 export const adminLogin = createServerFn({ method: "POST" })
-  .inputValidator((data: { username: string; password: string }) => data)
+  .validator((data: { username: string; password: string }) => data)
   .handler(async ({ data }) => {
     const { getSessionConfig, matches } = await import("./admin.server");
     const user = process.env["ADMIN_USERNAME"] ?? "";
@@ -32,7 +32,7 @@ export const adminSessionStatus = createServerFn({ method: "GET" }).handler(asyn
 });
 
 export const listSubmissions = createServerFn({ method: "GET" })
-  .inputValidator((data: { order?: "desc" | "asc" } | undefined) => data ?? {})
+  .validator((data: { order?: "desc" | "asc" } | undefined) => data ?? {})
   .handler(async ({ data }) => {
     const { isUnlocked } = await import("./admin.server");
     if (!(await isUnlocked())) return { unlocked: false as const, rows: [] };
