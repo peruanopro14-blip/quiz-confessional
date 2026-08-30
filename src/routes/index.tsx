@@ -38,7 +38,7 @@ function Index() {
         <OccasionsAndExamples />
         <ForWho />
         <Testimonials />
-        <WhatsAppProof />
+        
         <Forever />
         <Pricing />
         <Faq />
