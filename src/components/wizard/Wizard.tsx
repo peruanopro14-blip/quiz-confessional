@@ -169,17 +169,20 @@ export function Wizard() {
   };
 
   const handleSubmit = async () => {
-    // TODO: integração com backend/webhook.
-    // Envie o objeto `data` completo para a sua API de criação + checkout:
-    //
-    // await fetch("https://sua-api.com/webhook/amorcantado", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify(data),
-    // });
-    //
-    // Em seguida, redirecione para o checkout de pagamento.
-    console.log("AmorCantado — dados do funil:", data);
+    const { error } = await supabase.from("quiz_submissions").insert({
+      recipient: data.recipient,
+      recipient_name: data.recipientName,
+      my_relation: data.myRelation,
+      occasion: data.occasion,
+      story: data.story,
+      moments: data.moments,
+      genre: data.genre,
+      mood: data.mood,
+      name_in_song: data.nameInSong,
+      special_phrase: data.specialPhrase,
+      whatsapp: data.whatsapp,
+    });
+    if (error) console.error("Erro ao salvar respostas:", error.message);
     setSubmitted(true);
   };
 
