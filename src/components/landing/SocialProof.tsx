@@ -19,45 +19,6 @@ const testimonials = [
   },
 ];
 
-const chats = [
-  {
-    number: "+55 13 991**-**",
-    occasion: "Dia das Mães",
-    messages: [
-      { from: "them", text: "Filha, eu não consigo parar de chorar 😭" },
-      { from: "them", text: "Ouvi três vezes seguidas" },
-      { from: "me", text: "Fiz pensando em cada coisa que a senhora me ensinou ❤️" },
-    ],
-  },
-  {
-    number: "+55 21 987**-**",
-    occasion: "Pedido de casamento",
-    messages: [
-      { from: "me", text: "Aperta o play antes de abrir a caixinha" },
-      { from: "them", text: "AMOR" },
-      { from: "them", text: "que música é essa?? tem o nosso nome 😍😭" },
-    ],
-  },
-  {
-    number: "+55 31 998**-**",
-    occasion: "Aniversário",
-    messages: [
-      { from: "them", text: "melhor presente que eu já recebi na vida, sério" },
-      { from: "me", text: "Feliz aniversário 🎂" },
-      { from: "them", text: "já mandei pro grupo da família inteira kkk" },
-    ],
-  },
-  {
-    number: "+55 47 996**-**",
-    occasion: "Nascimento",
-    messages: [
-      { from: "them", text: "botei pra tocar no quarto dele agora" },
-      { from: "them", text: "dormiu ouvindo o nome dele na música 🥹" },
-      { from: "me", text: "Vai ser a música dele pra sempre" },
-    ],
-  },
-];
-
 export function Testimonials() {
   return (
     <section className="bg-gradient-night px-4 py-20 text-night-foreground">
@@ -80,57 +41,6 @@ export function Testimonials() {
             </figure>
           ))}
         </div>
-      </div>
-    </section>
-  );
-}
-
-export function WhatsAppProof() {
-  return (
-    <section className="bg-rose-surface px-4 py-20">
-      <div className="mx-auto w-full max-w-5xl">
-        <h2 className="text-center text-3xl font-extrabold sm:text-4xl">
-          Mensagens reais de quem recebeu
-        </h2>
-        <p className="mt-3 text-center text-muted-foreground">
-          Reações espontâneas no WhatsApp — sem filtro, sem edição
-        </p>
-
-        <div className="mt-12 grid gap-5 sm:grid-cols-2">
-          {chats.map((c) => (
-            <div
-              key={c.number}
-              className="overflow-hidden rounded-3xl border border-border shadow-soft"
-            >
-              <div className="flex items-center gap-3 bg-whatsapp-dark px-4 py-3 text-primary-foreground">
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary-foreground/20 text-sm">
-                  👤
-                </span>
-                <div>
-                  <p className="text-sm font-bold">{c.number}</p>
-                  <p className="text-[11px] opacity-80">{c.occasion}</p>
-                </div>
-              </div>
-              <div className="space-y-2 bg-muted px-4 py-5">
-                {c.messages.map((m, i) => (
-                  <div
-                    key={i}
-                    className={
-                      m.from === "me"
-                        ? "ml-auto max-w-[85%] rounded-2xl rounded-tr-sm bg-whatsapp/25 px-3 py-2 text-sm"
-                        : "mr-auto max-w-[85%] rounded-2xl rounded-tl-sm bg-card px-3 py-2 text-sm shadow-soft"
-                    }
-                  >
-                    {m.text}
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="mt-8 text-center text-xs text-muted-foreground">
-          🔒 Conversas reais — nomes e números protegidos
-        </p>
       </div>
     </section>
   );
