@@ -71,7 +71,13 @@ export function Pricing() {
               ))}
             </ul>
             <Button asChild variant="cta" size="xl" className="mt-8 w-full">
-              <Link to="/criar">Criar minha música</Link>
+              <a
+                href="https://checkoutseguro.info/checkout/cmtf59ns10cp101o7ktfz9c61?offer=IH60834"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Criar minha música
+              </a>
             </Button>
           </div>
         </div>
