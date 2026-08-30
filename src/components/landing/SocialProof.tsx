@@ -19,6 +19,32 @@ const testimonials = [
   },
 ];
 
+export function Testimonials() {
+  return (
+    <section className="bg-gradient-night px-4 py-20 text-night-foreground">
+      <div className="mx-auto w-full max-w-5xl">
+        <h2 className="text-center text-3xl font-extrabold sm:text-4xl">Emoções reais</h2>
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          {testimonials.map((t) => (
+            <figure
+              key={t.name}
+              className="rounded-3xl border border-night-foreground/10 bg-night-card p-7"
+            >
+              <div className="text-sm text-flame">★★★★★</div>
+              <blockquote className="mt-4 rounded-2xl bg-night-foreground/5 p-4 text-sm leading-relaxed">
+                “{t.quote}”
+              </blockquote>
+              <figcaption className="mt-4">
+                <span className="block font-bold">{t.name}</span>
+                <span className="text-xs text-night-foreground/60">{t.occasion}</span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 const timeline = [
   { tag: "Hoje", title: "Você ouve pela primeira vez", text: "O silêncio na sala, os olhos marejados." },
