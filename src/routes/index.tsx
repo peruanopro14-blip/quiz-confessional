@@ -4,7 +4,7 @@ import { SiteFooter, WhatsAppFab } from "@/components/SiteFooter";
 import { Hero } from "@/components/landing/Hero";
 import { Problem, Solution, Differentials, HowItWorks } from "@/components/landing/Story";
 import { OccasionsAndExamples, ForWho } from "@/components/landing/Occasions";
-import { Testimonials, WhatsAppProof, Forever } from "@/components/landing/SocialProof";
+import { Testimonials, Forever } from "@/components/landing/SocialProof";
 import { Pricing, Faq, FinalCta, Reviews } from "@/components/landing/Pricing";
 
 const title = "AmorCantado | Música personalizada para quem você ama";
