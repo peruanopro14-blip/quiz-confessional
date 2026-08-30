@@ -59,7 +59,6 @@ export function SiteFooter() {
 
         <div className="mt-8 space-y-1 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} AmorCantado — Todos os direitos reservados.</p>
-          <p>CNPJ 00.000.000/0001-00 · Rua das Canções, 123 — Santos/SP</p>
           <p>Feito com ❤️ no Brasil</p>
         </div>
       </div>
