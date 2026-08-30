@@ -30,7 +30,7 @@ const faq = [
   },
   {
     q: "Quais são as formas de pagamento?",
-    a: "Pix, cartão de crédito e boleto. O pagamento é único, de R$ 37,90, sem assinatura nem cobrança recorrente.",
+    a: "Pix, cartão de crédito e boleto. O pagamento é único, de R$ 29,90, sem assinatura nem cobrança recorrente.",
   },
   {
     q: "Posso pedir alterações depois de pronta?",
@@ -57,7 +57,7 @@ export function Pricing() {
               🎵 Música Personalizada
             </span>
             <div className="mt-6">
-              <span className="font-display text-5xl font-extrabold">R$ 37,90</span>
+              <span className="font-display text-5xl font-extrabold">R$ 29,90</span>
               <p className="mt-1 text-sm text-muted-foreground">pagamento único</p>
             </div>
             <ul className="mt-8 space-y-3 text-left">
