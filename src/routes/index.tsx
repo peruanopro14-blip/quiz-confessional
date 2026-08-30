@@ -1,24 +1,52 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter, WhatsAppFab } from "@/components/SiteFooter";
+import { Hero } from "@/components/landing/Hero";
+import { Problem, Solution, Differentials, HowItWorks } from "@/components/landing/Story";
+import { OccasionsAndExamples, ForWho } from "@/components/landing/Occasions";
+import { Testimonials, WhatsAppProof, Forever } from "@/components/landing/SocialProof";
+import { Pricing, Faq, FinalCta, Reviews } from "@/components/landing/Pricing";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "AmorCantado | Música personalizada para quem você ama";
+const description =
+  "Transforme a sua história de amor em uma música personalizada com letra, voz e produção profissional. Pronta em minutos por R$ 37,90.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <SiteHeader />
+      <main>
+        <Hero />
+        <Problem />
+        <Solution />
+        <Differentials />
+        <HowItWorks />
+        <OccasionsAndExamples />
+        <ForWho />
+        <Testimonials />
+        <WhatsAppProof />
+        <Forever />
+        <Pricing />
+        <Faq />
+        <FinalCta />
+        <Reviews />
+      </main>
+      <SiteFooter />
+      <WhatsAppFab />
     </div>
   );
 }
