@@ -41,11 +41,6 @@ export function SiteFooter() {
                 {l.label}
               </Link>
             ))}
-            <Button asChild variant="soft" size="sm" className="rounded-full">
-              <a href="https://wa.me/5513991000000" target="_blank" rel="noreferrer">
-                💬 Suporte no WhatsApp
-              </a>
-            </Button>
           </div>
         </div>
 
